@@ -29,5 +29,4 @@ Name | Default | Description
 ![demo](images/404-no-beta-access)
 
 ## TODO
-* if Dockerfile passes succeed right away
 * let users supply their own configuration file
