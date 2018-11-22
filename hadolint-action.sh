@@ -1,7 +1,6 @@
 #!/bin/sh
 set -e
 
-cd "${HADOLINT_ACTION_DOCKERFILE_FOLDER:-.}"
 DOCKERFILE="${HADOLINT_ACTION_DOCKERFILE_FOLDER:-.}/Dockerfile"
 
 set +e
