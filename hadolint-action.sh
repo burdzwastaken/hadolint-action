@@ -6,7 +6,7 @@ DOCKERFILE="${HADOLINT_ACTION_DOCKERFILE_FOLDER:-.}/Dockerfile"
 set +e
 FAILING_DOCKERFILE=$(sh -c "hadolint $DOCKERFILE" 2>&1)
 SUCCESS=$?
-echo "$FAILING_DOCKERFILE"
+echo "$DOCKERFILE"
 set -e
 
 if [ $SUCCESS -eq 0 ]; then
