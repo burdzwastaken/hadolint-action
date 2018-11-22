@@ -1,3 +1,4 @@
+# hadolint ignore=DL3007
 FROM alpine:latest
 
 LABEL version="1.0.0"
@@ -11,6 +12,7 @@ LABEL "com.github.actions.description"="Runs Hadolint against Pull Requests"
 LABEL "com.github.actions.icon"=""
 LABEL "com.github.actions.color"="yellow"
 
+# hadolint ignore=DL3018
 RUN apk add --no-cache \
 	bash \
 	ca-certificates \
