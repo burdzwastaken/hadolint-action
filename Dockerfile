@@ -7,18 +7,18 @@ LABEL repository="http://github.com/burdzwastaken/hadolint-action"
 LABEL homepage="http://github.com/burdzwastaken/hadolint-action"
 LABEL maintainer="Matt Burdan <github@burdz.net>"
 
-LABEL "com.github.actions.name"="Hadolint"
-LABEL "com.github.actions.description"="Runs Hadolint against Pull Requests"
-LABEL "com.github.actions.icon"=""
-LABEL "com.github.actions.color"="yellow"
+LABEL "com.github.actions.name"="hadolint"
+LABEL "com.github.actions.description"="Runs Hadolint against Pull Requests to validate there are no violations"
+LABEL "com.github.actions.icon"="terminal"
+LABEL "com.github.actions.color"="blue"
 
 # hadolint ignore=DL3018
 RUN apk add --no-cache \
-	bash \
-	ca-certificates \
-	coreutils \
-	curl \
-	jq
+        bash \
+        ca-certificates \
+        coreutils \
+        curl \
+        jq
 
 ENV HADOLINT_VERSION 1.15.0
 RUN curl -fsSL -o /usr/bin/hadolint "https://github.com/hadolint/hadolint/releases/download/v${HADOLINT_VERSION}/hadolint-Linux-x86_64" && \
