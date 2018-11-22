@@ -10,7 +10,7 @@ LABEL maintainer="Matt Burdan <github@burdz.net>"
 LABEL "com.github.actions.name"="hadolint"
 LABEL "com.github.actions.description"="Runs Hadolint against Pull Requests to validate there are no violations"
 LABEL "com.github.actions.icon"="terminal"
-LABEL "com.github.actions.color"="blue"
+LABEL "com.github.actions.color"="red"
 
 # hadolint ignore=DL3018
 RUN apk add --no-cache \
