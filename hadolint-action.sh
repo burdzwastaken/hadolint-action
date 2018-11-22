@@ -4,9 +4,9 @@ set -e
 DOCKERFILE="${HADOLINT_ACTION_DOCKERFILE_FOLDER:-.}/Dockerfile"
 
 set +e
-FAILING_DOCKERFILE=$(sh -c "hadolint $DOCKERFILE" 2>&1)
+HADOLINT_VIOLATIONS=$(sh -c "hadolint $DOCKERFILE" 2>&1)
 SUCCESS=$?
-echo "$DOCKERFILE"
+echo "$HADOLINT_VIOLATIONS"
 set -e
 
 if [ $SUCCESS -eq 0 ]; then
@@ -17,11 +17,8 @@ if [ "$HADOLINT_ACTION_COMMENT" = "1" ] || [ "$HADOLINT_ACTION_COMMENT" = "false
     exit $SUCCESS
 fi
 
-HADOLINT_VIOLATIONS="$(hadolint $DOCKERFILE)"
 COMMENT="#### \`hadolint\` Failed
-
 <details><summary><code>'$DOCKERFILE'</code></summary>
-
 \`\`\`
 hadolint violations:
 $HADOLINT_VIOLATIONS
