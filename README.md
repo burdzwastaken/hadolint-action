@@ -1,6 +1,6 @@
 # Hadolint Action
 
-A GitHub action that runs [hadolint](https://github.com/hadolint/hadolint) against a pull request.
+A GitHub action to run [hadolint](https://github.com/hadolint/hadolint) and reports violations given a Dockerfile within a repository on a pull request
 
 ## Usage
 
