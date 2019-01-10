@@ -31,3 +31,4 @@ Name | Default | Description
 ## TODO
 * Let users supply their own configuration file
 * Multiple `Dockerfile` support
+* Demo gif
