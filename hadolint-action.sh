@@ -19,10 +19,14 @@ fi
 
 COMMENT="#### \`hadolint\` Failed
 <details><summary><code>'$DOCKERFILE'</code></summary>
+<p>
+
+\`\`\`markdown
+hadolint violations:  
+$HADOLINT_VIOLATIONS  
 \`\`\`
-hadolint violations:
-$HADOLINT_VIOLATIONS
-\`\`\`
+
+</p>
 </details>
 "
 
