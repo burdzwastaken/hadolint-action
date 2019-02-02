@@ -1,0 +1,3 @@
+# for markdown formatting in `hadolint-action.sh`
+[*.{sh,md}]
+trim_trailing_whitespace = false
