@@ -1,3 +1,4 @@
+# hadolint ignore=DL3007
 FROM alpine:latest
 
 LABEL version="1.0.0"
