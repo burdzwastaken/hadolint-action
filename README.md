@@ -6,6 +6,24 @@ A GitHub action to run [hadolint](https://github.com/hadolint/hadolint) and repo
 
 ## Usage
 
+### V2 Workflows
+```
+on: pull_request
+name: hadolint action
+jobs:
+  hadolintOnPr:
+    name: hadolint on pr
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: hadolint on pr
+      uses: burdzwastaken/hadolint-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        HADOLINT_ACTION_DOCKERFILE_FOLDER: .
+```
+
+### V1 Workflows
 ```
 workflow "hadolint action" {
   on = "pull_request"
