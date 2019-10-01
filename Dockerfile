@@ -1,7 +1,7 @@
 # hadolint ignore=DL3007
 FROM alpine:latest
 
-LABEL version="1.2.0"
+LABEL version="1.3.0"
 LABEL name="hadolint-action"
 LABEL repository="http://github.com/burdzwastaken/hadolint-action"
 LABEL homepage="http://github.com/burdzwastaken/hadolint-action"
@@ -20,7 +20,7 @@ RUN apk add --no-cache \
         curl \
         jq
 
-ENV HADOLINT_VERSION 1.16.3
+ENV HADOLINT_VERSION 1.17.1
 RUN curl -fsSL -o /usr/bin/hadolint "https://github.com/hadolint/hadolint/releases/download/v${HADOLINT_VERSION}/hadolint-Linux-x86_64" && \
         chmod +x /usr/bin/hadolint
 
