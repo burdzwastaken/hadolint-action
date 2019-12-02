@@ -6,7 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: hadolint on pr
+    - name: shellcheck
+      uses: ludeeus/action-shellcheck@0.1.0
+    - name: hadolintz
       uses: burdzwastaken/hadolint-action@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
