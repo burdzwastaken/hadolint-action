@@ -12,7 +12,6 @@ LABEL "com.github.actions.description"="Runs hadolint against PR's to validate t
 LABEL "com.github.actions.icon"="terminal"
 LABEL "com.github.actions.color"="red"
 
-# hadolint ignore=DL3018
 RUN apk add --no-cache \
         bash \
         ca-certificates \
