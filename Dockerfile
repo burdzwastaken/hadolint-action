@@ -1,7 +1,7 @@
 # hadolint ignore=DL3007
 FROM alpine:latest
 
-LABEL version="1.7.1"
+LABEL version="1.8.0"
 LABEL name="hadolint-action"
 LABEL repository="http://github.com/burdzwastaken/hadolint-action"
 LABEL homepage="http://github.com/burdzwastaken/hadolint-action"
