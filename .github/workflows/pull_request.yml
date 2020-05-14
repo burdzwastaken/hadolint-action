@@ -7,7 +7,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: tests
-      runs: ./tests.sh
+      run: ./tests.sh
     - name: shellcheck
       uses: ludeeus/action-shellcheck@43d591f97276cf3883b8d6fd0341ecb1cc67142f
     - name: hadolintz
