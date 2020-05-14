@@ -2,6 +2,7 @@
 set -e
 
 DOCKERFILE="${HADOLINT_ACTION_DOCKERFILE_FOLDER:-.}/Dockerfile"
+FALSE="false"
 
 set +e
 HADOLINT_VIOLATIONS=$(sh -c "hadolint $DOCKERFILE" 2>&1)
@@ -13,7 +14,7 @@ if [ $SUCCESS -eq 0 ]; then
     exit 0
 fi
 
-if [ "$HADOLINT_ACTION_COMMENT" = "1" ] || [ "$HADOLINT_ACTION_COMMENT" = "false" ]; then
+if [ "$HADOLINT_ACTION_COMMENT" -eq 0 ] || [ "${HADOLINT_ACTION_COMMENT,,}" = "${FALSE,,}" ]; then
     exit $SUCCESS
 fi
 
