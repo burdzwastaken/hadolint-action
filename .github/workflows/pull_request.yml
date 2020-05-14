@@ -5,7 +5,9 @@ jobs:
     name: hadolint on pr
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v2
+    - name: tests
+      run: ./tests.sh
     - name: shellcheck
       uses: ludeeus/action-shellcheck@43d591f97276cf3883b8d6fd0341ecb1cc67142f
     - name: hadolintz
