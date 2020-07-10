@@ -1,6 +1,6 @@
-#!/bin/bash
-set -e
-set -o pipefail
+#!/usr/bin/env bash
+
+set -eo pipefail
 
 ERRORS=()
 
