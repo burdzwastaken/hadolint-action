@@ -20,7 +20,7 @@ RUN apk add --no-cache \
         curl \
         jq
 
-ENV HADOLINT_VERSION 1.17.6
+ENV HADOLINT_VERSION 1.17.7
 RUN curl -fsSL -o /usr/bin/hadolint "https://github.com/hadolint/hadolint/releases/download/v${HADOLINT_VERSION}/hadolint-Linux-x86_64" && \
         chmod +x /usr/bin/hadolint
 
