@@ -50,6 +50,13 @@ Name | Default | Description
 
 ![demo](images/hadolint-action.png)
 
+## FAQ
+* How can I ignore rules as this action does not (yet) support supplying a
+  configuration file?
+  * You can utilize
+	[inline-ignores](https://github.com/hadolint/hadolint#inline-ignores) within
+	your `Dockerfile`
+
 ## TODO
 * Let users supply their own `hadolint.yaml` and/or trusted registries passed through
 * Multiple `Dockerfile` support
