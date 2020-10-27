@@ -1,12 +1,12 @@
 # hadolint ignore=DL3007
 FROM alpine:latest
 
-ENV HADOLINT_VERSION 1.18.0
+ENV HADOLINT_VERSION 1.18.2
 
-LABEL version="1.9.0"
+LABEL version="1.9.1"
 LABEL name="hadolint-action"
-LABEL repository="http://github.com/burdzwastaken/hadolint-action"
-LABEL homepage="http://github.com/burdzwastaken/hadolint-action"
+LABEL repository="https://github.com/burdzwastaken/hadolint-action"
+LABEL homepage="https://github.com/burdzwastaken/hadolint-action"
 LABEL hadolint_version="v${HADOLINT_VERSION}"
 LABEL maintainer="Matt Burdan <github@burdz.net>"
 LABEL "com.github.actions.name"="hadolint"
