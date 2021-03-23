@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 set -e
 
 DOCKERFILE="${HADOLINT_ACTION_DOCKERFILE_FOLDER:-.}/Dockerfile"
@@ -14,7 +14,7 @@ if [ $SUCCESS -eq 0 ]; then
     exit 0
 fi
 
-if [ "$HADOLINT_ACTION_COMMENT" -eq 0 ] || [ "${HADOLINT_ACTION_COMMENT,,}" = "${FALSE,,}" ]; then
+if [[ "$HADOLINT_ACTION_COMMENT" -eq 0 || "${HADOLINT_ACTION_COMMENT,,}" = "${FALSE,,}" ]]; then
     exit $SUCCESS
 fi
 
