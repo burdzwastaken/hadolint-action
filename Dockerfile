@@ -1,7 +1,7 @@
 # hadolint ignore=DL3007
 FROM alpine:latest
 
-ENV HADOLINT_VERSION 1.23.0
+ENV HADOLINT_VERSION 2.4.1 
 
 LABEL version="1.14.0"
 LABEL name="hadolint-action"
