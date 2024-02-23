@@ -1,5 +1,7 @@
 # Hadolint Action
 
+DEPRECATED: Please use the official [hadolint github action](https://github.com/hadolint/hadolint-action)
+
 <a href="https://github-actions.netlify.com/hadolint"><img src="https://img.shields.io/badge/as%20seen%20on%20-GitHubActions-blue.svg" alt=“GitHub-actions”></a> 
 
 A GitHub action to run [hadolint](https://github.com/hadolint/hadolint) and reports violations given a Dockerfile within a repository on a pull request
